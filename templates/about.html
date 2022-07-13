@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <div class="about-section">
+        <h1>About Top 5 Cars</h1>
+        <p>Some text about who we are and what we do.</p>
+        <p>Resize the browser window to see that this page is responsive by the way.</p>
+      </div>
+      
+      <h2 style="text-align:center">Top 5 Cars Team</h2>
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <img src="{{url_for('static',filename = 't5c_logo.jpg')}}" alt="Tarig" style="width:25%">
+            <div class="container">
+              <h2>Tarig Ahmed</h2>
+              <p class="title">CEO & Founder</p>
+              <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+              <p>Tarig@top5cars.com</p>
+              <p><button onclick= a href="{{ url_for('my_view.contact')}}" , class="button">Contact</button></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+              <img src="{{url_for('static',filename = 't5c_logo.jpg')}}" alt="Tarig" style="width:25%">
+              <div class="container">
+                <h2>Tarig Ahmed</h2>
+                <p class="title">Developer</p>
+                <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                <p>Tarig@top5cars.com</p>
+                <p><button class="button">Contact</button></p>
+              </div>
+            </div>
+          </div>
+        
+          <div class="column">
+            <div class="card">
+              <img src="{{url_for('static',filename = 't5c_logo.jpg')}}" alt="Tarig" style="width:25%">
+              <div class="container">
+                <h2>Tarig Ahmed</h2>
+                <p class="title">Designer</p>
+                <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                <p>Tarig@top5cars.com</p>
+                <p><button class="button">Contact</button></p>
+              </div>
+        
+          </div>
+        </div>
+      </div>
+
+<footer> 
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus, quibusdam?</p>
+</footer>
+{% endblock %}

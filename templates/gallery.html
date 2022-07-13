@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{{url_for('static',filename = 'gallery.css')}}">
+    <title>Gallery</title>
+</head>
+<body>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap');
+    </style>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar scroll</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="{{ url_for('my_view.t5c')}}">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('my_view.about')}}">About</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('my_view.news')}}">News</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('my_view.contact')}}">Contact</a>
+                  </li>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+
+<div class = "full-img" id="fullImgBox">
+  <img src= " {{url_for('static',filename = 't5c_logo.jpg')}} " id="fullImg">
+  <span onclick="closeFullImg()">X</span>
+</div>
+
+<div class = "img-gallery">
+  <img src=" {{url_for('static',filename = 't5c_logo.jpg')}} " onclick="openFullImg(this.src)">
+  <img src=" {{url_for('static',filename = 'mg00.jpg')}} " onclick="openFullImg(this.src)">
+  <img src=" {{url_for('static',filename = 'mg01.jpg')}} " onclick="openFullImg(this.src)">
+  <img src=" {{url_for('static',filename = 'mg02.webp')}} " onclick="openFullImg(this.src)">
+  <img src=" {{url_for('static',filename = 't5c_logo.jpg')}} " onclick="openFullImg(this.src)">
+  <img src=" {{url_for('static',filename = 't5c_logo.jpg')}} " onclick="openFullImg(this.src)">
+  <img src=" {{url_for('static',filename = 't5c_logo.jpg')}} " onclick="openFullImg(this.src)">
+  <img src=" {{url_for('static',filename = 't5c_logo.jpg')}} " onclick="openFullImg(this.src)">
+  <img src=" {{url_for('static',filename = 't5c_logo.jpg')}} " onclick="openFullImg(this.src)">
+  <img src=" {{url_for('static',filename = 't5c_logo.jpg')}} " onclick="openFullImg(this.src)">
+  <img src=" {{url_for('static',filename = 't5c_logo.jpg')}} " onclick="openFullImg(this.src)">
+  <img src=" {{url_for('static',filename = 't5c_logo.jpg')}} " onclick="openFullImg(this.src)">
+  
+</div>
+
+<script>
+
+  var fullImgBox = document.getElementById("fullImgBox");
+  var fullImg = document.getElementById("fullImg");
+
+  function openFullImg(pic){
+    fullImgBox.style.display = "flex";
+    fullImg.src = pic;
+ }
+
+ function closeFullImg(pic){
+  fullImgBox.style.display = "none";
+ }
+
+</script>
+
+<br><bar></bar>
+<footer>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, quas?</p>
+</footer>
+
+<!--  -->
+      <!-- <br><br> -->
+<!--  -->
+      <!-- <div class="container-lg">  -->
+<!--  -->
+        <!-- <div class="container"> -->
+            <!-- <div class="row g-3"> -->
+              <!-- <div class="col-6"> -->
+                <!-- <div class="p-3 border bg-light">1Custom column padding</div> -->
+              <!-- </div> -->
+              <!-- <div class="col-6"> -->
+                <!-- <div class="p-3 border bg-light">2Custom column padding</div> -->
+              <!-- </div> -->
+              <!-- <div class="col-6"> -->
+                <!-- <div class="p-3 border bg-light">3Custom column padding</div> -->
+              <!-- </div> -->
+              <!-- <div class="col-6"> -->
+                <!-- <div class="p-3 border bg-light">4Custom column padding</div> -->
+              <!-- </div> -->
+              <!-- <div class="col-6"> -->
+                <!-- <div class="p-3 border bg-light">5Custom column padding</div> -->
+              <!-- </div> -->
+              <!-- <div class="col-6"> -->
+                <!-- <div class="p-3 border bg-light">6Custom column padding</div> -->
+              <!-- </div> -->
+            <!-- </div> -->
+          <!-- </div> -->
+<!-- <br><br> -->
+
+          <!-- <div class="container"> -->
+            <!-- <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3"> -->
+              <!-- <div class="col"> -->
+                <!-- <div class="p-3 border bg-light">1Row column</div> -->
+              <!-- </div> -->
+              <!-- <div class="col"> -->
+                <!-- <div class="p-3 border bg-light">2Row column</div> -->
+              <!-- </div> -->
+              <!-- <div class="col"> -->
+                <!-- <div class="p-3 border bg-light">3Row column</div> -->
+              <!-- </div> -->
+              <!-- <div class="col"> -->
+                <!-- <div class="p-3 border bg-light">4Row column</div> -->
+              <!-- </div> -->
+              <!-- <div class="col"> -->
+                <!-- <div class="p-3 border bg-light">5Row column</div> -->
+              <!-- </div> -->
+              <!-- <div class="col"> -->
+                <!-- <div class="p-3 border bg-light">6Row column</div> -->
+              <!-- </div> -->
+            <!-- </div> -->
+          <!-- </div> -->
+
+      <!-- </div> -->
+    
+    
+
+</body>
+</html>
