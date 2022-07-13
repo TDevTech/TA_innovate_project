@@ -10,7 +10,7 @@ def index():
 def home_redirect():
     return redirect(url_for("my_view.index"))
 
-
+@my_view.route("/")
 @my_view.route('/t5c')
 def t5c():
     return render_template("t5c.html") 
