@@ -35,7 +35,7 @@ nav a.logo{
 .banner-area h2{
     font-size: 65px;
     margin: 0;
-    color: #ffffff;
+    color: #ff0000;
     animation: animate 2s 1;
 }
 
@@ -61,7 +61,11 @@ nav a.logo{
  align-items: center;
  justify-content: center;
  flex-direction: column;
- /* color: #ffff; */
+ color: #ffff;
+}
+
+.banner-area p{
+    background-color: rgba(22, 22, 22, 0.293);
 }
 
 .btn{

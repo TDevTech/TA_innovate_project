@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <!-- JavaScript Bundle with Popper -->
@@ -15,9 +15,9 @@
     <title>Gallery</title>
 </head>
 <body>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap');
-    </style>
+  
+  
+  
     <!-- <nav class="navbar navbar-expand-lg bg-light"> -->
         <!-- <div class="container-fluid"> -->
           <!-- <a class="navbar-brand" href="#">Navbar scroll</a> -->
@@ -51,18 +51,18 @@
   <span onclick="closeFullImg()">X</span>
 </div>
 <div class = "img-gallery">
-  <img src=" {{url_for('static',filename = 't5c_logo.jpg')}} " onclick="openFullImg(this.src)">
-  <img src=" {{url_for('static',filename = 'mg00.jpg')}} " onclick="openFullImg(this.src)">
-  <img src=" {{url_for('static',filename = 'mg01.jpg')}} " onclick="openFullImg(this.src)">
-  <img src=" {{url_for('static',filename = 'mg02.webp')}} " onclick="openFullImg(this.src)">
-  <img src=" {{url_for('static',filename = 't5c_logo.jpg')}} " onclick="openFullImg(this.src)">
-  <img src=" {{url_for('static',filename = 't5c_logo.jpg')}} " onclick="openFullImg(this.src)">
-  <img src=" {{url_for('static',filename = 't5c_logo.jpg')}} " onclick="openFullImg(this.src)">
-  <img src=" {{url_for('static',filename = 't5c_logo.jpg')}} " onclick="openFullImg(this.src)">
-  <img src=" {{url_for('static',filename = 't5c_logo.jpg')}} " onclick="openFullImg(this.src)">
-  <img src=" {{url_for('static',filename = 't5c_logo.jpg')}} " onclick="openFullImg(this.src)">
-  <img src=" {{url_for('static',filename = 't5c_logo.jpg')}} " onclick="openFullImg(this.src)">
-  <img src=" {{url_for('static',filename = 't5c_logo.jpg')}} " onclick="openFullImg(this.src)">
+  <a href="{{ url_for('my_view.t5c')}}"><img  src=" {{url_for('static',filename = 'home0.png')}} " onclick="openFullImg(this)"></a>
+  <a href="{{ url_for('my_view.suv')}}"><img  src=" {{url_for('static',filename = 'mg02.png')}} " onclick="openFullImg(this)"></a>
+  <a href="{{ url_for('my_view.suv')}}"><img  src=" {{url_for('static',filename = 'sj02.jpg')}} " onclick="openFullImg(this)"></a>
+  <a href="{{ url_for('my_view.city')}}"><img  src=" {{url_for('static',filename = 'a1q1.jpg')}} " onclick="openFullImg(this)"></a>
+  <a href="{{ url_for('my_view.city')}}"><img  src=" {{url_for('static',filename = 'f5e1.webp')}} " onclick="openFullImg(this)"></a>
+  <a href="{{ url_for('my_view.coupe')}}"><img  src=" {{url_for('static',filename = 'aet01.jpg')}} " onclick="openFullImg(this)"></a>
+  <a href="{{ url_for('my_view.coupe')}}"><img  src=" {{url_for('static',filename = 'bi42.jpg')}} " onclick="openFullImg(this)"></a>
+  <a href="{{ url_for('my_view.hatchback')}}"><img  src=" {{url_for('static',filename = 'a3s0.jpg')}} " onclick="openFullImg(this)"></a>
+  <a href="{{ url_for('my_view.hatchback')}}"><img  src=" {{url_for('static',filename = 'yc4.jpg')}} " onclick="openFullImg(this)"></a>
+  <a href="{{ url_for('my_view.saloon')}}"><img  src=" {{url_for('static',filename = 'ms0.jpg')}} " onclick="openFullImg(this.src)"></a>
+  <a href="{{ url_for('my_view.saloon')}}"><img  src=" {{url_for('static',filename = 'vp0.jpg')}} " onclick="openFullImg(this.src)"></a>
+  <a href="{{ url_for('my_view.news')}}"><img  src=" {{url_for('static',filename = 't500.jpg')}} " onclick="openFullImg(this.src)"></a>
 </div>
 <script>
   var fullImgBox = document.getElementById("fullImgBox");
@@ -75,8 +75,11 @@
   fullImgBox.style.display = "none";
  }
 </script>
+<!-- <style> -->
+  <!-- /* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap'); */ -->
+   <!-- </style>  -->
 <footer>
-  <p>| Top 5 Cars © 2022 | Top 5 Cars is cars review website, all rights reserved. | Privacy Policy | Terms of Service |</p>
+  <p center>| Top 5 Cars © 2022 | Top 5 Cars is cars review website, all rights reserved. | Privacy Policy | Terms of Service |</p</center>
 </footer>
 </body>
 </html>

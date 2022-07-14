@@ -1,4 +1,20 @@
 
+Responsive layout - makes a two column-layout instead of four columns
+/* @media screen and (max-width: 800px) { */
+    /* .img-gallery { */
+      /* flex: 50%; */
+      /* max-width: 50%; */
+    /* } */
+  /* } */
+/*    */
+  Responsive layout - makes the two columns stack on top of each other instead of next to each other
+  /* @media screen and (max-width: 600px) { */
+    /* .img-gallery { */
+      /* flex: 100%; */
+      /* max-width: 100%; */
+    /* } */
+  /* } */
+
 *{
     margin: 0;
     padding: 0;
@@ -9,6 +25,12 @@ body{
     background: #f8f4f4;
 
 }
+/* img { */
+    /* float: left; */
+    /* width: 100px; */
+    /* height: 100px; */
+    /* object-fit: cover; */
+    /* } */
 .img-gallery{
     width: 80%;
     margin: 100px auto 50px;
@@ -21,6 +43,7 @@ body{
 
 .img-gallery img{
     width: 100%;
+    height: 100%;
     cursor: pointer;
 }
 .img-gallery img:hover{
