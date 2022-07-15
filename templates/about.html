@@ -1,14 +1,13 @@
 {% extends 'base.html' %}
 
 {% block content %}
-
-    <div class="about-section">
-        <h1>About Top 5 Cars</h1>
-        <p>Some text about who we are and what we do.</p>
-        <p>Resize the browser window to see that this page is responsive by the way.</p>
-      </div>
-      
-      <h2 style="text-align:center">Top 5 Cars Team</h2>
+  <div class="about-section">
+    <h1>About Top 5 Cars</h1>
+    <!-- <p>Some text about who we are and what we do.</p> -->
+    <p>If you were a “super awesome” cars reviwes website, what medium would you choose to show people what car should they drive?
+    </p>
+  </div>
+  <h2 style="text-align:center">Top 5 Cars Team</h2>
       <div class="row">
         <div class="column">
           <div class="card">
@@ -16,7 +15,9 @@
             <div class="container">
               <h2>Tarig Ahmed</h2>
               <p class="title">CEO & Founder, Designer, Developer</p>
-              <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+              <p>Top 5 Cars is founded by Tarig Ahmed, designer and developer for Code Nation Innovate Level 3, full-stack web development.
+                 This website is about the top 5 Car reviews and their alternative best option currently on the market. also, there is information about us, our Privacy policy and our terms of service.
+              </p>
               <p>Tarig@top5cars.com</p>
               <p><a href="{{ url_for('my_view.contact')}}"><button class="button">Contact</button></a></p>
             </div>
@@ -29,21 +30,25 @@
               <div class="container">
                 <h2>our Privacy Policy</h2>
                 <p class="title">Privacy Policy</p>
-                <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                <p>Tarig@top5cars.com</p>
+                <p>This website is operated by Top 5 Cars and whose registered address is Top 5 Cars address. (“We”) are committed to protecting and preserving the privacy of our visitors when visiting our site or communicating electronically with us.
+                  We confirm that we will keep your information secure and that we will comply fully with all applicable UK Data Protection legislation and regulations.
+                  By visiting Top 5 Cars website. (our website) you are accepting and consenting to the practices described in this policy.
+                </p>
+                <!-- <p>Tarig@top5cars.com</p> -->
                 <!-- <p><a href="{{ url_for('my_view.contact')}}"><button class="button">Contact</button></a></p> -->
               </div>
             </div>
           </div>
-        
           <div class="column">
             <div class="card">
               <img src="{{url_for('static',filename = 't5c_logo.jpg')}}" alt="Tarig" style="width:25%">
               <div class="container">
                 <h2>our Terms of Service</h2>
                 <p class="title">Terms of Service</p>
-                <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                <p>Tarig@top5cars.com</p>
+                <p>Please read these terms of service carefully before using Top 5 Cars website operated by Top 5 Cars website.</p><br>
+                <p>Conditions of Use:<br>We will provide their services to you, which are subject to the conditions stated below in this document. Every time you visit this website, use its services or make a purchase, you accept the following conditions. This is why we urge you to read them carefully.
+                  </p>
+                <!-- <p>Tarig@top5cars.com</p> -->
                 <!-- <p><a href="{{ url_for('my_view.contact')}}"><button class="button">Contact</button></a></p> -->
               </div>
         

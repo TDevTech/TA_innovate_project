@@ -6,32 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{url_for('static',filename = 't5c.css')}}">
     <title>Top 5 Cars - Home</title>
-
 </head>
 
-
-
 <body>
- 
     <nav>    
         <a href="{{url_for('static',filename = 't5c_logo.jpg')}}" class="logo">Top 5 Cars</a>
         <a href="{{ url_for('my_view.about')}}">About</a>
         <a href="{{ url_for('my_view.t5c')}}">Home</a>
         <a href="{{ url_for('my_view.news')}}">News</a>   
         <a href="{{ url_for('my_view.contact')}}">Contact</a>
-        <a href="{{ url_for('my_view.admin')}}">Admin</a> 
+        <!-- <a href="{{ url_for('my_view.admin')}}">Admin</a>  -->
     </nav>
     <div class="banner-area">
-        <h2>Top 5 Cars</h2>
+        <h2>Top 5Cars</h2>
         <br>
         <p>expert With years of experience at some of the top automotive information sites, independent vehicle reviewers and road testing of new, customised, and used automobiles offer new car buyers real-world feedback and helpful recommendations.</p>
-        <br>
+        <!-- <br> -->
         <a href="{{ url_for('my_view.gallery')}}" class="btn">Explore Top 5 Cars</a>
         <br>
     </div>
-
-
 </body>
-
-
 </html>
