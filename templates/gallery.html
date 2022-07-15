@@ -14,44 +14,14 @@
     <link rel="stylesheet" href="{{url_for('static',filename = 'gallery.css')}}">
     <title>Gallery</title>
 </head>
+
 <body>
-  
-  
-  
-    <!-- <nav class="navbar navbar-expand-lg bg-light"> -->
-        <!-- <div class="container-fluid"> -->
-          <!-- <a class="navbar-brand" href="#">Navbar scroll</a> -->
-          <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation"> -->
-            <!-- <span class="navbar-toggler-icon"></span> -->
-          <!-- </button> -->
-          <!-- <div class="collapse navbar-collapse" id="navbarScroll"> -->
-            <!-- <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;"> -->
-              <!-- <li class="nav-item"> -->
-                <!-- <a class="nav-link active" aria-current="page" href="{{ url_for('my_view.t5c')}}">Home</a> -->
-              <!-- </li> -->
-              <!-- <li class="nav-item"> -->
-                <!-- <a class="nav-link" href="{{ url_for('my_view.about')}}">About</a> -->
-                <!-- <li class="nav-item"> -->
-                    <!-- <a class="nav-link" href="{{ url_for('my_view.news')}}">News</a> -->
-                  <!-- </li> -->
-                  <!-- <li class="nav-item"> -->
-                    <!-- <a class="nav-link" href="{{ url_for('my_view.contact')}}">Contact</a> -->
-                  <!-- </li> -->
-              <!-- </li> -->
-            <!-- </ul> -->
-            <!-- <form class="d-flex" role="search"> -->
-              <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
-              <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
-            <!-- </form> -->
-          <!-- </div> -->
-        <!-- </div> -->
-      <!-- </nav> -->
 <div class = "full-img" id="fullImgBox">
   <img src= " {{url_for('static',filename = 't5c_logo.jpg')}} " id="fullImg">
   <span onclick="closeFullImg()">X</span>
 </div>
 <div class = "img-gallery">
-  <a href="{{ url_for('my_view.t5c')}}"><img  src=" {{url_for('static',filename = 'home0.png')}} " onclick="openFullImg(this)"></a>
+  <a href="{{ url_for('my_view.t5c')}}"><img  src=" {{url_for('static',filename = 't500.jpg')}} " onclick="openFullImg(this)"></a>
   <a href="{{ url_for('my_view.suv')}}"><img  src=" {{url_for('static',filename = 'mg02.png')}} " onclick="openFullImg(this)"></a>
   <a href="{{ url_for('my_view.suv')}}"><img  src=" {{url_for('static',filename = 'sj02.jpg')}} " onclick="openFullImg(this)"></a>
   <a href="{{ url_for('my_view.city')}}"><img  src=" {{url_for('static',filename = 'a1q1.jpg')}} " onclick="openFullImg(this)"></a>
@@ -62,7 +32,7 @@
   <a href="{{ url_for('my_view.hatchback')}}"><img  src=" {{url_for('static',filename = 'yc4.jpg')}} " onclick="openFullImg(this)"></a>
   <a href="{{ url_for('my_view.saloon')}}"><img  src=" {{url_for('static',filename = 'ms0.jpg')}} " onclick="openFullImg(this.src)"></a>
   <a href="{{ url_for('my_view.saloon')}}"><img  src=" {{url_for('static',filename = 'vp0.jpg')}} " onclick="openFullImg(this.src)"></a>
-  <a href="{{ url_for('my_view.news')}}"><img  src=" {{url_for('static',filename = 't500.jpg')}} " onclick="openFullImg(this.src)"></a>
+  <a href="{{ url_for('my_view.news')}}"><img  src=" {{url_for('static',filename = 't508.webp')}} " onclick="openFullImg(this.src)"></a>
 </div>
 <script>
   var fullImgBox = document.getElementById("fullImgBox");
@@ -75,11 +45,8 @@
   fullImgBox.style.display = "none";
  }
 </script>
-<!-- <style> -->
-  <!-- /* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap'); */ -->
-   <!-- </style>  -->
-<footer>
-  <p center>| Top 5 Cars © 2022 | Top 5 Cars is cars review website, all rights reserved. | Privacy Policy | Terms of Service |</p</center>
-</footer>
+<div id="footer">
+  <p>| Top 5 Cars © 2022 | Top 5 Cars is cars review website, all rights reserved. | Privacy Policy | Terms of Service |</p>
+</div> 
 </body>
 </html>
