@@ -40,6 +40,7 @@ label{
     left: 0;
     top: 0;
     padding: 10px;
+    margin-left: 1%;
     color: rgb(255, 255, 255);
     cursor: text;
     transition: 0.2s;

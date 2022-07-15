@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap');
-
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
@@ -62,7 +61,10 @@ body {
     background-color: #555;
   }
   
-
+footer{
+  text-align: center;
+  font-weight: bold;
+}
   @media screen and (max-width: 650px) {
     .column {
       width: 100%;
